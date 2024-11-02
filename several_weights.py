@@ -22,11 +22,12 @@ for i in range(30):
     for j in range(len(weight_delta)):
         weight_delta[j] = inp[j] * delta
 
-    print("Iteration: ", i)
+    print("Iteration:  ", i)
     print("Prediction: ", pred)
     print("Error: ", error)
     print("Weight: ", weight)
     print("Weight_delta: ", weight_delta, "\n")
+    print()
 
     for k in range(len(weight)):
         weight[k] -= weight_delta[k] * alpha
